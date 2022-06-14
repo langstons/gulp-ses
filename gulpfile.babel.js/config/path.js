@@ -19,8 +19,8 @@ export default {
   },
 
   scss: {
-    src: pathSrc + "/styles/scss/main.{scss, sass}",
-    watch: [pathSrc + "/styles/scss/**/*.{scss, sass}", pathSrc + "/components/**/*.{scss, sass}"],
+    src: pathSrc + "/styles/scss/main.{scss,sass}",
+    watch: [pathSrc + "/styles/scss/**/*.{scss,sass}", pathSrc + "/components/**/*.{scss,sass}"],
     dest: pathDest + "/css"
   },
 
@@ -32,8 +32,8 @@ export default {
   },
 
   img: {
-    src: pathSrc + "/img/**/*.{ png,jpg,jpeg,gif,svg,ico }",
-    watch: pathSrc + "/img/**/*.{ png,jpg,jpeg,gif,svg,ico }",
+    src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
+    watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
     dest: pathDest + "/img"
   },
 
@@ -44,8 +44,8 @@ export default {
   },
 
   fonts: {
-    src: pathSrc + "/fonts/*.{ eot,ttf,otf,otc,ttc,woff,woff2,svg }",
-    watch: pathSrc + "/fonts/**/*.{ eot,ttf,otf,otc,ttc,woff,woff2,svg }",
+    src: pathSrc + "/fonts/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+    watch: pathSrc + "/fonts/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
     dest: pathDest + "/fonts"
   },
 }
