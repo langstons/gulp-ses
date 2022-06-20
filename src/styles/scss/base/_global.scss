@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: $color-background;
 }
 
@@ -42,8 +42,103 @@ button {
 }
 
 .container {
-	max-width: 1440px;
+	max-width: 1368px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 150px;
+}
+
+.site-title {
+	max-width: 480px;
+	color: $color-text-main;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.section-title {
+	color: $color-text-main;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+// Swiper =====>
+.swiper-wrapper {
+	align-items: stretch;
+}
+
+.swiper-slide {
+	height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 48px;
+	min-width: 48px;
+	max-height: 48px;
+	min-height: 48px;
+	background-color: $color-yellow;
+	&::after {
+		display: none;
+	}
+	&__icon {
+		fill: $color-text-main;
+		max-width: 24px;
+		min-width: 24px;
+		max-height: 24px;
+		min-height: 24px;
+	}
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: 0px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: 0px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	margin-top: 20px;
+	bottom: unset;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-pagination-bullet {
+	transition: $transition-normal;
+
+	&-active {
+		background-color: $color-text-main;
+		max-width: 12px;
+		min-width: 12px;
+		max-height: 12px;
+		min-height: 12px;
+	}
+}
+
+// Media 1280px =====>
+@include max-xl {
+	.container {
+		padding: 0 15px;
+	}
+}
+
+// Media 768px =====>
+@include max-md {
+	.site-title {
+		font-size: 48px;
+	}
+	.section-title {
+		font-size: 48px;
+	}
 }

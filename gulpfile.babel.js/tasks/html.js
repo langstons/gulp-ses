@@ -17,6 +17,9 @@ export default () => {
         message: error.message
       }))
     }))
-    .pipe(fileInclude())
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
   .pipe(gulp.dest(path.html.dest))
 }

@@ -1,35 +1,61 @@
 <header class="header">
-  <div class="container">
-    <div class="logo">
-      <img src="img/logo.svg" alt="Logo Of Langston">
-    </div>
-    <h1 class="site-title">
-      gulp-starter
-    </h1>
+  <div class="container header__container">
+    <a href="/" class="header__logo">
+      <img src="img/logo.svg" alt="Logo of SES">
+    </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="https://www.behance.net/darilangstons?tracking_source=search_projects%7Cdarilangstons" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#behance"></use>
-            </svg>
+          <a href="/" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item dropdown">
+          <button class="dropdown__trigger">
+            Our offer
+          </button>
+          <div class="dropdown__item">
+            <ul class="nav__sublist">
+              <li class="nav__subitem">
+                <a href="offer.html" class="nav__sublink">
+                  Distribution
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            About us
           </a>
         </li>
         <li class="nav__item">
-          <a href="https://www.instagram.com/langston.project/" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
+          <a href="#" class="nav__link">
+            Our projects
           </a>
         </li>
         <li class="nav__item">
-          <a href="https://github.com/langstons" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#github"></use>
-            </svg>
+          <a href="#" class="nav__link">
+            Contacts
           </a>
         </li>
       </ul>
     </nav>
+    <div class="header__wrapper">
+      <div class="header__contacts">
+        <a href="tel:+385953856993" class="header__phone">
+          +385 95 3856 993
+        </a>
+        <p class="header__schedule">
+          Working time: <strong>9:00-18:00</strong>
+        </p>
+      </div>
+      <a href="#" class="header__language">
+        EN
+      </a>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 </header>

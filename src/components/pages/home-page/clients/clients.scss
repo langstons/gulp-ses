@@ -1,0 +1,31 @@
+.clients {
+	padding: 48px 0 64px;
+	.section-title {
+		margin: 0 auto 50px;
+		text-align: center;
+	}
+	&__slider {
+		padding: 0 20px 40px;
+	}
+	&-pagination {
+		display: none;
+	}
+}
+
+// Media 576px =====>
+@include max-sm{
+	.clients {
+		&__slider {
+			padding: 0 0 48px;
+		}
+		&-pagination {
+			display: flex;
+		}
+		&-button {
+			&-prev,
+			&-next {
+				display: none;
+			}
+		}
+	}
+}

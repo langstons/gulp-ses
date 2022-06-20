@@ -1,0 +1,45 @@
+.about {
+	padding: 48px 0 64px;
+	&__container {
+		padding: 0 70px;
+	}
+	.section-title {
+		margin: 0 auto 48px;
+		text-align: center;
+	}
+	&__table {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 78px;
+	}
+	.btn-primary {
+		margin: 50px auto 0;
+	}
+}
+
+// Media 1280px =====>
+@include max-xl {
+	.about {
+		&__table {
+			gap: 48px;
+		}
+	}
+}
+
+// Media 992px =====>
+@include max-lg {
+	.about {
+		&__table {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+// Media 576px =====>
+@include max-sm {
+	.about {
+		&__table {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

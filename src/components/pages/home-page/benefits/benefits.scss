@@ -1,0 +1,37 @@
+.benefits {
+	padding: 64px 0;
+	background-color: #F9F9F9;
+	&__container {
+		padding: 0 70px;
+	}
+	.section-title {
+		margin: 0 auto 48px;
+		text-align: center;
+	}
+	&__table {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 64px;
+	}
+	.btn-primary {
+		margin: 50px auto 0;
+	}
+}
+
+// Media 1280px =====>
+@include max-xl {
+	.benefits {
+		&__table {
+			gap: 48px;
+		}
+	}
+}
+
+// Media 576px =====>
+@include max-sm {
+	.benefits {
+		&__table {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

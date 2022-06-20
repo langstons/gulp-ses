@@ -5,63 +5,608 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
-  <title>Document</title>
+  <title>SES - Soft Energy Systems</title>
 
   <!-- Import Style's -->
-  <link rel="stylesheet" href="./css/main.min.css">
   <link rel="stylesheet" href="./css/vendor.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
   
   <!-- Header -->
   <header class="header">
-  <div class="container">
-    <div class="logo">
-      <img src="img/logo.svg" alt="Logo Of Langston">
-    </div>
-    <h1 class="site-title">
-      gulp-starter
-    </h1>
+  <div class="container header__container">
+    <a href="/" class="header__logo">
+      <img src="img/logo.svg" alt="Logo of SES">
+    </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="https://www.behance.net/darilangstons?tracking_source=search_projects%7Cdarilangstons" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#behance"></use>
-            </svg>
+          <a href="/" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item dropdown">
+          <button class="dropdown__trigger">
+            Our offer
+          </button>
+          <div class="dropdown__item">
+            <ul class="nav__sublist">
+              <li class="nav__subitem">
+                <a href="offer.html" class="nav__sublink">
+                  Distribution
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            About us
           </a>
         </li>
         <li class="nav__item">
-          <a href="https://www.instagram.com/langston.project/" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
+          <a href="#" class="nav__link">
+            Our projects
           </a>
         </li>
         <li class="nav__item">
-          <a href="https://github.com/langstons" class="nav__link">
-            <svg class="social-icon">
-              <use xlink:href="img/sprite.svg#github"></use>
-            </svg>
+          <a href="#" class="nav__link">
+            Contacts
           </a>
         </li>
       </ul>
     </nav>
+    <div class="header__wrapper">
+      <div class="header__contacts">
+        <a href="tel:+385953856993" class="header__phone">
+          +385 95 3856 993
+        </a>
+        <p class="header__schedule">
+          Working time: <strong>9:00-18:00</strong>
+        </p>
+      </div>
+      <a href="#" class="header__language">
+        EN
+      </a>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 </header>
   <main>
-
+    <!-- Hero -->
+    <section class="hero">
+	<div class="hero__wrapper">
+		<div class="hero__background">
+			<img src="img/hero-image.png" alt="Decor image">
+		</div>
+		<div class="container">
+			<h1 class="site-title">
+				Find out benefits of solar energy
+			</h1>
+			<a href="/" class="arrow-link">
+	<span class="arrow-link__icon">
+		<svg>
+			<use xlink:href="img/sprite.svg#arrow-right">
+  	</svg>
+	</span>
+	<span class="arrow-link__text">
+		Get a free consultation
+	</span>
+</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="hero__text">
+			<p class="hero__description">
+				Every day more and more people want to buy and mount solar panels on their roof. That is understandable as the price of solar panels in Croatia becomes more affordable and the price of electricity becomes higher and higher.
+			</p>
+			<p class="hero__description">
+				Our company offers the full spectrum of solar energy systems supply. Contact us and get a free consultation. We will answer all the questions about solar systems that you may have and also explain its benefits.
+			</p>
+		</div>
+	</div>
+</section>
+    <!-- About -->
+    <section class="about">
+	<div class="container about__container">
+		<h2 class="section-title">
+			Why solar energy?
+		</h2>
+		<div class="about__table">
+			<div class="about-card">
+	<div class="about-card__header">
+		<div class="about-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#piggy-bank"></use>
+			</svg>
+		</div>
+		<h3 class="about-card__title">
+			IT`S PROFITABLE
+		</h3>
+	</div>
+	<p class="about-card__description">
+		Year by year the ownership of solar panels becomes more and more profitable. Even with actual prices which are increasing every year you will return your investments in 5-7 years as a household and in 3-4 years as a company (with green loan even faster).
+	</p>
+</div><div class="about-card">
+	<div class="about-card__header">
+		<div class="about-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#leaf"></use>
+			</svg>
+		</div>
+		<h3 class="about-card__title">
+			IT`S HARMLESS TO NATURE
+		</h3>
+	</div>
+	<p class="about-card__description">
+		More than 32 billion m3 of CO2 releases every year due to traditional energy sources (gas, coal, oil). Solar systems take energy directly from nature and make no harm to it. Choose green energy today and safe our planet for next generations.
+	</p>
+</div><div class="about-card">
+	<div class="about-card__header">
+		<div class="about-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#coin"></use>
+			</svg>
+		</div>
+		<h3 class="about-card__title">
+			IT INCREASES YOUR HOME VALUE
+		</h3>
+	</div>
+	<p class="about-card__description">
+		Houses that have installed solar panels become more attractive either for potential buyers or just for renters. Many people are now involved in environmental agenda. They would gladly prefer a carbon neutral property.
+	</p>
+</div><div class="about-card">
+	<div class="about-card__header">
+		<div class="about-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#user-settings"></use>
+			</svg>
+		</div>
+		<h3 class="about-card__title">
+			IT MAKES YOU INDEPENDENT
+		</h3>
+	</div>
+	<p class="about-card__description">
+		Year by year the ownership of solar panels becomes more and more profitable. Even with actual prices which are increasing every year you will return your investments in 5-7 years as a household and in 3-4 years as a company (with green loan even faster).
+	</p>
+</div>
+		</div>
+		<a href="/" class="btn-primary">
+	<span class="btn-primary__text">
+		Feedback
+	</span>
+</a>
+	</div>
+</section>
+    <!-- Guide -->
+    <section class="guide">
+  <div class="guide__wrapper">
+    <div class="guide__image">
+      <img src="img/guide-image.png" alt="Image">
+    </div>
+    <div class="guide__text">
+      <h2 class="section-title">
+        How can I install a solar plant on my roof ?
+      </h2>
+      <p class="guide__subtitle">
+        Usually it takes <strong>3-4 months</strong> from your decission to the first Watt of solar energy in your house. 
+      </p>
+      <p class="guide__description">
+        There are 4 main steps which you need to make on the way to it
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="guide__table">
+      <div class="guide-card">
+  <h3 class="guide-card__title">
+    1. PROJECT
+  </h3>
+  <p class="guide-card__description">
+    First of all you need to design a project of a future solar plant. It involves calculation of required capacity and drawing it on paper and in 3D.
+  </p>
+  <svg class="guide-card__icon">
+    <use xlink:href="img/sprite.svg#arrow-right"></use>
+  </svg>
+</div><div class="guide-card">
+  <h3 class="guide-card__title">
+    2. COORDINATION
+  </h3>
+  <p class="guide-card__description">
+    Every project must be approved by croatian instances and HEP. You need to send it and also a filled application to these instances.
+  </p>
+  <svg class="guide-card__icon">
+    <use xlink:href="img/sprite.svg#arrow-right"></use>
+  </svg>
+</div><div class="guide-card">
+  <h3 class="guide-card__title">
+    3. BUYING SOLAR PANELS
+  </h3>
+  <p class="guide-card__description">
+    After the project is approved you can buy chosen solar panels, inverters and constructions.
+  </p>
+  <svg class="guide-card__icon">
+    <use xlink:href="img/sprite.svg#arrow-right"></use>
+  </svg>
+</div><div class="guide-card">
+  <h3 class="guide-card__title">
+    4. MOUNTING
+  </h3>
+  <p class="guide-card__description">
+    Finally you need to mount solar plant on your roof and connect it to electrical network.
+  </p>
+  <svg class="guide-card__icon">
+    <use xlink:href="img/sprite.svg#arrow-right"></use>
+  </svg>
+</div>
+    </div>
+    <p class="guide__description">
+      Our company does everything from this list turnkey and offers one of the best conditions on the market!
+    </p>
+    <a href="/" class="arrow-link">
+	<span class="arrow-link__icon">
+		<svg>
+			<use xlink:href="img/sprite.svg#arrow-right">
+  	</svg>
+	</span>
+	<span class="arrow-link__text">
+		Contacts Us
+	</span>
+</a>
+  </div>
+</section>
+    <!-- Benefits -->
+    <section class="benefits">
+	<div class="container benefits__container">
+		<h2 class="section-title">
+			Why Soft Energy Systems?
+		</h2>
+		<div class="benefits__table">
+			<div class="benefits-card">
+	<div class="benefits-card__header">
+		<div class="benefits-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#factory"></use>
+			</svg>
+		</div>
+		<h3 class="benefits-card__title">
+			DIRECTLY FROM FACTORY
+		</h3>
+	</div>
+	<p class="benefits-card__description">
+		Our company buys solar panels and inverters directly from manufacturers. As we don't work with distributors, we can offers you the best price on the market.
+	</p>
+</div><div class="benefits-card">
+	<div class="benefits-card__header">
+		<div class="benefits-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#hangar"></use>
+			</svg>
+		</div>
+		<h3 class="benefits-card__title">
+			EVERYTHING IS IN STOCK
+		</h3>
+	</div>
+	<p class="benefits-card__description">
+		Most companies haven't got their own stock so their clients have to wait 1-2 more months for delivery. We have our own warehouse in Split and can deliver you everything in 1 day.
+	</p>
+</div><div class="benefits-card">
+	<div class="benefits-card__header">
+		<div class="benefits-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#question"></use>
+			</svg>
+		</div>
+		<h3 class="benefits-card__title">
+			FULL SUPPORT WITH HEP AND OTHER INSTANCES
+		</h3>
+	</div>
+	<p class="benefits-card__description">
+		Most people don't want to contact with all the instances them self. We understand them! Our company takes all of this from you. It's a part of our service.
+	</p>
+</div><div class="benefits-card">
+	<div class="benefits-card__header">
+		<div class="benefits-card__icon">
+			<svg>
+				<use xlink:href="img/sprite.svg#calculator"></use>
+			</svg>
+		</div>
+		<h3 class="benefits-card__title">
+			FREE CALCULATIONS AND PRE-PROJECT
+		</h3>
+	</div>
+	<p class="benefits-card__description">
+		Want to know more about solar energy? We will make calculations based on your yearly consumption and draw a plan. After you can see if solar systems fit you enough.
+	</p>
+</div>
+		</div>
+	</div>
+</section>
+    <!-- Projects -->
+    <section class="projects">
+  <div class="container">
+    <h2 class="section-title">
+      Our projects
+    </h2>
+    <div class="swiper projects__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-1.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div><div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-2.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div><div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-3.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div><div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-1.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div><div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-2.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div><div class="swiper-slide projects__slide">
+	<div class="projects-card">
+		<div class="projects-card__image">
+			<img src="img/project-3.png" alt="Project preview">
+		</div>
+		<div class="projects-card__text">
+			<h3 class="projects-card__title">
+				Mauris eget facilisis
+			</h3>
+			<p class="projects-card__description">
+				Sed aliquet tincidunt nunc id suscipit. Aenean vestibulum mi arcu, vitae lacinia elit luctus non. Quisque et nisl turpis.
+			</p>
+			<a href="/" class="arrow-link">
+				<span class="arrow-link__icon">
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow-right">
+					</svg>
+				</span>
+				<span class="arrow-link__text">
+					See more
+				</span>
+			</a>
+		</div>
+	</div>
+</div>
+      </div>
+      <div class="swiper-pagination projects-pagination"></div>
+      <button class="swiper-button-prev projects-button-prev">
+        <svg class="swiper-button-prev__icon">
+          <use xlink:href="img/sprite.svg#arrow-prev"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next projects-button-next">
+        <svg class="swiper-button-next__icon">
+          <use xlink:href="img/sprite.svg#arrow-next"></use>
+        </svg>
+      </button>
+    </div>
+    <a href="/" class="btn-primary">
+	<span class="btn-primary__text">
+		Feedback
+	</span>
+</a>
+  </div>
+</section>
+    <!-- Clients -->
+    <section class="clients">
+	<div class="container">
+		<h2 class="section-title">
+			Our clients
+		</h2>
+		<div class="swiper clients__slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide clients__slide">
+	<div class="clients-card">
+		<p class="clients-card__description">
+			Donec vitae ullamcorper lectus. Praesent urna augue, sodales non scelerisque a, lobortis a purus. Phasellus non varius odio, ut euismod tellus. Proin in volutpat antelobortis a purus.
+		</p>
+		<h3 class="clients-card__title">
+			Name
+		</h3>
+	</div>
+</div><div class="swiper-slide clients__slide">
+	<div class="clients-card">
+		<p class="clients-card__description">
+			Quisque eget porta odio, sed interdum mauris. Vestibulum ultricies congue nisl, non commodo enim tincidunt ac. Sed vitae gravida eros. Ut luctus metus enim, vitae tincidunt est tempus eu. Duis luctus mattis mauris vel sagittis. Sed ac tortor et eros vulputate tempor non non leo. Curabitur sit amet fermentum nunc, eu scelerisque diam.
+		</p>
+		<h3 class="clients-card__title">
+			Name
+		</h3>
+	</div>
+</div><div class="swiper-slide clients__slide">
+	<div class="clients-card">
+		<p class="clients-card__description">
+			Donec vitae ullamcorper lectus. Praesent urna augue, sodales non scelerisque a, lobortis a purus. Phasellus non varius odio, ut euismod tellus. Proin in volutpat antelobortis a purus.
+		</p>
+		<h3 class="clients-card__title">
+			Name
+		</h3>
+	</div>
+</div><div class="swiper-slide clients__slide">
+	<div class="clients-card">
+		<p class="clients-card__description">
+			Quisque eget porta odio, sed interdum mauris. Vestibulum ultricies congue nisl, non commodo enim tincidunt ac. Sed vitae gravida eros. Ut luctus metus enim, vitae tincidunt est tempus eu. Duis luctus mattis mauris vel sagittis. Sed ac tortor et eros vulputate tempor non non leo. Curabitur sit amet fermentum nunc, eu scelerisque diam.
+		</p>
+		<h3 class="clients-card__title">
+			Name
+		</h3>
+	</div>
+</div>
+			</div>
+			<div class="swiper-pagination clients-pagination"></div>
+			<button class="swiper-button-prev clients-button-prev">
+				<svg class="swiper-button-prev__icon">
+					<use xlink:href="img/sprite.svg#arrow-prev"></use>
+				</svg>
+			</button>
+			<button class="swiper-button-next clients-button-next">
+				<svg class="swiper-button-next__icon">
+					<use xlink:href="img/sprite.svg#arrow-next"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
   <div class="container">
-    
+    <div class="footer__table">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__title">
+            Address
+          </h3>
+        </li>
+        <li class="footer__item">
+          Croatia, Okrug Gornij, Put Garbine, 68
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__title">
+            Contacts
+          </h3>
+        </li>
+        <li class="footer__item">
+          <a href="tel:+385953856993" class="footer__link">
+            Tel.:<strong>+385 95 3856 993</strong>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="mailto:contact@ses-croatia.com" class="footer__link">
+            E-mail: contact@ses-croatia.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social__list">
+        <li class="social__item">
+          <a target="_blank" href="https://www.instagram.com/ses.croatia/" class="social__link">
+            <img src="img/instagram.svg" alt="Icon Instagram" class="social__icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer__copyright">
+      © Soft Energy Systems d.o.o. 2022
+    </p>
   </div>
 </footer>
 
   <!-- Import Script's -->
-  <script src="./js/main.min.js"></script>
   <script src="./js/vendor.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>

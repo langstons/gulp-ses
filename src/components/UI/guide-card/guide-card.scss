@@ -1,0 +1,88 @@
+.guide-card {
+	position: relative;
+	transition: $transition-normal;
+	padding: 30px;
+	border-radius: 16px;
+	&__title {
+		margin: 0 0 30px;
+		color: $color-text-main;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	&__description {
+		color: $color-text-main;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.4;
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: calc(100% + 30px);
+		transform: translateY(-50%);
+		fill: $color-text-main;
+		max-width: 32px;
+		min-width: 32px;
+		max-height: 32px;
+		min-height: 32px;
+	}
+	&:hover {
+		background-color: $color-white;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+	}
+	&:last-child {
+		.guide-card {
+			&__icon {
+				display: none;
+			}
+		}
+	}
+}
+
+// Media 992px =====>
+@include max-lg {
+	.guide-card {
+		&:nth-child(2) {
+			.guide-card {
+				&__icon {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// Media 768px =====>
+@include max-md {
+	.guide-card {
+		&__icon {
+			left: calc(100% + 8px);
+		}
+	}
+}
+
+// Media 576px =====>
+@include max-sm {
+	.guide-card {
+		&__title,
+		&__description {
+			text-align: center;
+		}
+		&__icon {
+			display: block;
+			margin: 0 auto;
+			left: 50%;
+			top: calc(100% + 8px);
+			transform: translate(-50% , 0) rotate(90deg);
+		}
+		&:nth-child(2) {
+			.guide-card {
+				&__icon {
+					display: block;
+				}
+			}
+		}
+	}
+}

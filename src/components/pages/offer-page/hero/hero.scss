@@ -1,0 +1,8 @@
+.offer-page {
+	.hero {
+		padding: 0 0 48px;
+		&__text {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

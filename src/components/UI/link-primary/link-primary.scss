@@ -1,0 +1,30 @@
+.btn-primary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 22px 0;
+	max-width: 208px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	background-color: $color-yellow;
+	box-shadow: 20px 20px 80px 5px rgba(37,37,82,0.15);
+	border-radius: 200px;
+	transition: $transition-normal;
+	&__text {
+		color: $color-text-main;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		transition: $transition-normal;
+	}
+	&:hover {
+		background-color: $color-text-main;
+		.btn-primary {
+			&__text {
+				color: $color-white;
+			}
+		}
+	}
+}

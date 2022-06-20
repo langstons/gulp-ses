@@ -1,0 +1,23 @@
+.offer-page {
+  .guide {
+    &__description {
+      font-size: 16px;
+      font-weight: 400;
+      &:not(:last-of-type) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+// Media 768px =====>
+@include max-md {
+  .offer-page {
+    .guide {
+      &__description {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+}

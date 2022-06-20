@@ -1,0 +1,18 @@
+<section class="about">
+	<div class="container about__container">
+		<h2 class="section-title">
+			Why solar energy?
+		</h2>
+		<div class="about__table">
+			@@loop('../../../UI/about-card/about-card.html', [
+				{ "icon": "piggy-bank", "title": "IT`S PROFITABLE", "text": "Year by year the ownership of solar panels becomes more and more profitable. Even with actual prices which are increasing every year you will return your investments in 5-7 years as a household and in 3-4 years as a company (with green loan even faster)." },
+				{ "icon": "leaf", "title": "IT`S HARMLESS TO NATURE", "text": "More than 32 billion m3 of CO2 releases every year due to traditional energy sources (gas, coal, oil). Solar systems take energy directly from nature and make no harm to it. Choose green energy today and safe our planet for next generations." },
+				{ "icon": "coin", "title": "IT INCREASES YOUR HOME VALUE", "text": "Houses that have installed solar panels become more attractive either for potential buyers or just for renters. Many people are now involved in environmental agenda. They would gladly prefer a carbon neutral property." },
+				{ "icon": "user-settings", "title": "IT MAKES YOU INDEPENDENT", "text": "Year by year the ownership of solar panels becomes more and more profitable. Even with actual prices which are increasing every year you will return your investments in 5-7 years as a household and in 3-4 years as a company (with green loan even faster)." },
+			])
+		</div>
+		@@include('../../../UI/link-primary/link-primary.html', {
+			"href": "/", "text": "Feedback"
+		})
+	</div>
+</section>

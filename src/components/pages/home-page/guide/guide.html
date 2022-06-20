@@ -1,0 +1,35 @@
+<section class="guide">
+  <div class="guide__wrapper">
+    <div class="guide__image">
+      <img src="img/guide-image.png" alt="Image">
+    </div>
+    <div class="guide__text">
+      <h2 class="section-title">
+        How can I install a solar plant on my roof ?
+      </h2>
+      <p class="guide__subtitle">
+        Usually it takes <strong>3-4 months</strong> from your decission to the first Watt of solar energy in your house. 
+      </p>
+      <p class="guide__description">
+        There are 4 main steps which you need to make on the way to it
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="guide__table">
+      @@loop('../../../UI/guide-card/guide-card.html', [
+        { "title": "1. PROJECT", "text": "First of all you need to design a project of a future solar plant. It involves calculation of required capacity and drawing it on paper and in 3D." },
+        { "title": "2. COORDINATION", "text": "Every project must be approved by croatian instances and HEP. You need to send it and also a filled application to these instances." },
+        { "title": "3. BUYING SOLAR PANELS", "text": "After the project is approved you can buy chosen solar panels, inverters and constructions." },
+        { "title": "4. MOUNTING", "text": "Finally you need to mount solar plant on your roof and connect it to electrical network." },
+      ])
+    </div>
+    <p class="guide__description">
+      Our company does everything from this list turnkey and offers one of the best conditions on the market!
+    </p>
+    @@include('../../../UI/arrow-link/arrow-link.html', {
+      "text": "Contacts Us",
+      "href": "/"
+    })
+  </div>
+</section>

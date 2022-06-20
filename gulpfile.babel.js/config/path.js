@@ -13,7 +13,7 @@ export default {
 
   css: {
     src: [pathSrc + "/styles/css/**/*.css", pathSrc + "/components/**/*.css"],
-    libs: pathSrc + "/styles/libs/**/*.css",
+    libs: pathSrc + "/styles/libs/**/*.{css,min.css}",
     watch: [pathSrc + "/styles/css/**/*.css", pathSrc + "/components/**/*.css"],
     dest: pathDest + "/css"
   },
